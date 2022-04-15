@@ -13,5 +13,5 @@ jobs:
       with:
         destination_branch: "master"
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        pr_title: "Pulling ${{ github.ref }} into master" 
+        pr_title: "[AUTO] Pushing ${{ github.head_ref }} into master" 
         pr_label: "auto-pr"
