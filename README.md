@@ -1,8 +1,7 @@
 so wow doge
 ======
 
-
-1
+2
 Show so wow doge when you like something on vk.com  
 by юрачка
 
