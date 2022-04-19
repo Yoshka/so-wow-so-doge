@@ -13,5 +13,12 @@ jobs:
       with:
         destination_branch: "master"
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        pr_title: "Pulling ${{ github.ref }} into master" 
+        pr_title: "[AUTO] Pushing ${{ github.head_ref || github.ref_name }}  into master" 
+        pr_label: "auto-pr"
+    - name: pull-request-for-deploy-on-test-env
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "qwe"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        pr_title: "[AUTO] Pushing ${{ github.head_ref || github.ref_name }}  into qwe" 
         pr_label: "auto-pr"
